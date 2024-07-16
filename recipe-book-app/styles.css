@@ -1,0 +1,32 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding: 20px;
+    text-align: center;
+    background-color: #0c2461;
+    color: #fff;
+}
+
+.recipe {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    margin: 1rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}

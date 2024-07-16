@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+main {
+    min-width: 40%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+
+}
+
+h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+button {
+    align-self: center;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background-color: aquamarine;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bfbfbf;
+}
+
+
+.dice {
+    font-size: 7rem;
+    text-align: center;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.roll-animation {
+    animation-name: roll;
+}
+@keyframes roll {
+    0% {
+      transform: rotateY(0deg) rotateX(0deg);
+    }
+  
+    100% {
+      transform: rotateY(720deg) rotateX(720deg);
+    }
+  }
+  
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem auto;
+
+}
+ .output {
+    min-width: 40%;
+
+ }
+
+li {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+li span {
+    font-size: 3.5rem;
+    margin-right: 1rem;
+    
+    
+    
+    
+
+    
+}
