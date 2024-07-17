@@ -19,6 +19,8 @@ main {
     gap: 1rem;
     padding: 1rem;
     max-width: 70%;
+    width: 650px;
+    min-width: 400px;
 }
 
 img {
