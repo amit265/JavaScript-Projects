@@ -1,26 +1,27 @@
 const API_KEY = "275d58779ccf4e22af03e792e8819fff";
-
+const image = "./sample.jpg"
 const recipeList = document.getElementById("recipeList");
 
 function displayRecipes(recipes) {
-  // recipelist.innerHTML = "";
+  console.log(recipes);
+  recipeList.innerHTML = "";
   recipes.forEach((recipe) => {
     const recipeItem = document.createElement("li");
     recipeItem.classList.add("recipe-item");
-    const recipeImage = document.createElement("img");
+    recipeImage = document.createElement("img");
     recipeImage.src = recipe.image;
-    recipeImage.alt = recipe.title;
+    recipeImage.alt = "recipe - title";
 
-    const recipeTitle = document.createElement("h2");
+    recipeTitle = document.createElement("h2");
     recipeTitle.innerText = recipe.title;
 
-    const recipeIngredients = document.createElement("p");
+    recipeIngredients = document.createElement("p");
     recipeIngredients.innerHTML = `
         <strong>Ingredients: </strong> ${recipe.extendedIngredients
           .map((ingredient) => ingredient.original)
           .join(", ")}`;
 
-    const recipeLink = document.createElement("a");
+    recipeLink = document.createElement("a");
     recipeLink.href = recipe.sourceUrl;
     recipeLink.innerText = "View Recipe";
 
@@ -28,7 +29,7 @@ function displayRecipes(recipes) {
     recipeItem.appendChild(recipeTitle);
     recipeItem.appendChild(recipeIngredients);
     recipeItem.appendChild(recipeLink);
-    recipelist.appendChild(recipeItem);
+    recipeList.appendChild(recipeItem);
   });
 }
 
@@ -38,6 +39,7 @@ async function getRecipes() {
       `https://api.spoonacular.com/recipes/random?number=10&apiKey=${API_KEY}`
     );
     const data = await response.json();
+    console.log(data.recipes);
     return data.recipes;
 
   } catch (error) {
@@ -54,9 +56,6 @@ async function init() {
     const error = new Error;
     console.log(error)
   }
-  
-  console.log("recipes");
-  console.log(recipes);
-}
+  }
 
 init();
