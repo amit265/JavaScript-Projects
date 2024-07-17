@@ -78,6 +78,7 @@ ul {
   .recipe-item img {
     width: 100%;
     height: auto;
+    text-align: center;
 
   }
 
