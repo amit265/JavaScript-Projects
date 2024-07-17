@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #f4ecec;
+    
+}
+
+main {
+    margin-top: 3rem;
+    margin-inline: auto;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    height: 50vh;
+    background-color: #fff;
+
+
+}
+
+h2 {
+
+    font-weight: 500;
+    margin-top: 2rem;
+    
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    
+}
+
+button {
+    font-size: 3.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+
+#rock {
+    background-color: orangered;
+    color: black;
+}
+
+#paper {
+    background-color: blue;
+    color: black;
+}
+
+#scissor {
+    background-color: greenyellow;
+    color: black;
+}
+
+button:hover {
+    border: none;
+    box-shadow: 0px 0px 50px rgba(51, 14, 96, 0.8);
+    background-color: green;
+}
+
+
+
+#userScore {
+    color: green;
+}
+
+#computerScore {
+    color: rgb(19, 157, 255);
+}
+
+#finalResult {
+
+    color: rgb(104, 13, 232);
+}
