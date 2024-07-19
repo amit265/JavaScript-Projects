@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bookly</title>
+</head>
+<body>
+
+    <div class="modal">
+        <div class="container">
+            <h1 class="form_title">Add new books!</h1>
+            <p class="form_subtitle">
+                You can add multiple books to your reading list, you can delete them and mark as read.
+            </p>
+            <form action="" class="form">
+                <div class="form_input_fullwidth_icon">
+                    <input type="text" name="bookName" placeholder="Name of the book" required>
+                    <input type="text" name="bookAuthor" placeholder="Author of the book!" required>
+                    <input type="text" name="bookImage" placeholder="Book poster image url">
+                    <button class="form_button" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="books">
+        <ul class="book_list"></ul>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
