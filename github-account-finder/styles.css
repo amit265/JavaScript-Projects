@@ -94,3 +94,17 @@ body {
    span {
     font-weight: 500;
    }
+
+
+   .invisible {
+    opacity: 0;
+   }
+
+   #errorId{
+    position: absolute;
+    text-align: center;
+    color: red;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+   }

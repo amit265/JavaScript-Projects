@@ -8,6 +8,8 @@ const names = document.getElementById("nameId");
 const bio = document.getElementById("bioId");
 const caption = document.getElementById("caption");
 const repos = document.getElementById("reposId");
+const main = document.querySelector(".main");
+const errorId = document.getElementById("errorId");
 
 function displayUI(data) {
   if (data.name) {
@@ -24,12 +26,18 @@ function displayUI(data) {
     follower.innerHTML = data.followers;
     following.innerHTML = data.following;
   } else {
-    alert("No user found");
-    init();
+    main.classList.add("invisible");
+    errorId.innerText = "No user found, enter valid username";
+    setTimeout(() => {
+      init();
+      errorId.innerText = "";
+    }, 2000);
   }
 }
 // ${event.target.value}
 function handleChange() {
+  main.classList.remove("invisible");
+
   if (event.keyCode === 13) {
     let xrh = new XMLHttpRequest();
     xrh.open("GET", `https://api.github.com/users/${event.target.value}`);
@@ -48,6 +56,8 @@ function handleChange() {
 input.addEventListener("keyup", handleChange);
 
 async function init() {
+  main.classList.remove("invisible");
+
   try {
     const response = await fetch("https://api.github.com/users/torvalds");
     const data = await response.json();
