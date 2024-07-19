@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+#stopButton {
+  background-color: red;
+}
+
+#stopButton:hover {
+  background-color: greenyellow;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+button {
+  font-size: 1.2rem;
+  background-color: greenyellow;
+  border: none;
+  padding: 1rem 0;
+  font-weight: 800;
+  border-radius: 10px;
+  width: 30%;
+  margin: 0 auto;
+  color: white;
+  cursor: pointer;
+
+}
+
+button:hover {
+    color: black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0prgb(255, 255, 255)ba(127, 16, 16, 0.7);
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+canvas {
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.826);
+  background-image: linear-gradient(
+    45deg,
+    rgb(215, 215, 215),
+    rgb(235, 192, 192)
+  );
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 10% auto;
+  max-width: 60%;
+  width: 650px;
+  min-width: 400px;
+}
