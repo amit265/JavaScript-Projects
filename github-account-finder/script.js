@@ -7,6 +7,7 @@ const userLocation = document.getElementById("locationId");
 const names = document.getElementById("nameId");
 const bio = document.getElementById("bioId");
 const caption = document.getElementById("caption");
+const repos = document.getElementById("reposId");
 
 function displayUI(data) {
   if (data.name) {
@@ -16,6 +17,9 @@ function displayUI(data) {
     names.innerHTML = data.name;
     bio.innerHTML = data.bio ? data.bio : "Not available";
     userName.innerHTML = data.login;
+    
+    repos.innerHTML =  data.public_repos;
+
     userLocation.innerHTML = data.location;
     follower.innerHTML = data.followers;
     following.innerHTML = data.following;
