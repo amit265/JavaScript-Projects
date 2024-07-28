@@ -23,7 +23,7 @@ Below is a list of all the projects included in this repository. Click on the pr
 7. [Project 7: Github Account Finder](./github-account-finder)
 8. [Project 8: Javascript Quiz](./javascript-quiz)
 9. [Project 9: Notice Board](./notice-board)
-10. [Project 10: Pomodore Timer](./pomodore-timer)
+10. [Project 10: Pomodoro Timer](./pomodoro-timer)
 11. [Project 11: Quotes Infinite Scroll](./quotes-infinite-scroll)
 12. [Project 12: Recipe Book App](./recipe-book-app)
 13. [Project 13: Rock Paper Scissors](./rock-paper-scissors)
