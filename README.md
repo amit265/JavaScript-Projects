@@ -14,7 +14,7 @@ Welcome to the 100 JavaScript Projects repository! This repository contains a co
 
 Below is a list of all the projects included in this repository. Click on the project name to navigate to its folder:
 
-1. [Project 1: 2D Breakout Game](./2d-breakout-game)
+1. [Project 1: 2D Breakout Game](./2d-breakout-game) 
 2. [Project 2: Age Calculator](./age-calculator)
 3. [Project 3: Bookly](./bookly)
 4. [Project 4: Canvas](./canvas)
@@ -38,7 +38,11 @@ Below is a list of all the projects included in this repository. Click on the pr
 22. [Project 22: Tip Calculator](./tip-calculator)
 23. [Project 23: Video Trailer Popup](./video-trailer-popup)
 24. [Project 24: Weight Converter](./weight-converter)
-
+25. [Project 25: Cash Register Project](./cash-register-project/)
+26. [Project 26. Palindrome Checker](./palindrome-checker/)
+27. [Project 27: Pokemon Search App](./pokemon-search-app/)
+28. [Project 28: Roman Numeral Converter](./roman-numeral-converter/)
+29. [Project 29: Telephone Number Validator](./telephone-number-validator/)
 
 ## Installation
 
