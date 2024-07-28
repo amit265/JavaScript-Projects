@@ -16,19 +16,15 @@ body {
 
 .image {
   max-width: 50%;
-  width: 650px;
   min-width: 400px;
   box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   display: flex;
-  height: 80%;
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
 }
 figure {
-  display: block;
-  height: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -36,13 +32,14 @@ figure {
 
 img {
   display: block;
-  height: 100%;
-  width: 100%;
   object-fit: cover;
+  height: 400px;
+  width: 300px;
+  margin-inline: auto;
 }
 img:hover {
   border: 1px solid red;
-  transform: scaleX(-1);
+  
 }
 
 button {
@@ -54,6 +51,7 @@ button {
   font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   border: none;
+  border-radius: 10px;
 }
 
 button:hover {
