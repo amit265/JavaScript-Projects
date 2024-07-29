@@ -16,92 +16,38 @@ Welcome to the 100 JavaScript Projects repository! This repository contains a co
 
 Below is a list of all the projects included in this repository. Click on the project name to navigate to its folder:
 
-1. [Project 1: 2D Breakout Game](./2d-breakout-game)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/2d-breakout-game/)
-   
-2. [Project 2: Age Calculator](./age-calculator)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/age-calculator/)
+| Serial No. | Project Name                             | Description                              | Live Demo                                                                                                            |
+|------------|------------------------------------------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| 1          | [2D Breakout Game](./2d-breakout-game)   | A classic 2D arcade game using JavaScript. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/2d-breakout-game/) |
+| 2          | [Age Calculator](./age-calculator)       | Calculates age based on input birthdate.  | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/age-calculator/) |
+| 3          | [Bookly](./bookly)                       | A book management app with CRUD operations. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/bookly/) |
+| 4          | [Canvas](./canvas)                       | Drawing application using HTML5 Canvas.  | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/canvas/) |
+| 5          | [Dice Roll Simulator](./dice-roll-simulator) | Simulates the rolling of dice. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/dice-roll-simulator/) |
+| 6          | [Gallery](./gallery)                     | Image gallery with various effects.      | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/gallery/) |
+| 7          | [Github Account Finder](./github-account-finder) | Searches for GitHub accounts by username. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/github-account-finder/) |
+| 8          | [Javascript Quiz](./javascript-quiz)     | Interactive quiz on JavaScript.          | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/javascript-quiz/) |
+| 9          | [Notice Board](./notice-board)           | Digital notice board application.        | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/notice-board/) |
+| 10         | [Pomodoro Timer](./pomodoro-timer)       | Timer based on the Pomodoro technique.   | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/pomodoro-timer/) |
+| 11         | [Quotes Infinite Scroll](./quotes-infinite-scroll) | Infinite scroll of quotes.               | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/quotes-infinite-scroll/) |
+| 12         | [Recipe Book App](./recipe-book-app)     | A digital recipe book application.       | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/recipe-book-app/) |
+| 13         | [Rock Paper Scissors](./rock-paper-scissors) | Classic Rock Paper Scissors game.        | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/rock-paper-scissors/) |
+| 14         | [Simple Stopwatch](./simple-stopwatch)   | A simple stopwatch application.          | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/simple-stopwatch/) |
+| 15         | [Social Media Selector Menu](./social-media-selector-menu) | Social media link selector. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/social-media-selector-menu/) |
+| 16         | [Splash Image](./splash-image)           | Creates a splash image effect.           | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/splash-image/) |
+| 17         | [Step Progress Bar](./step-progress-bar) | Step-by-step progress bar UI component.  | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/step-progress-bar/) |
+| 18         | [Sticky Nav](./sticky-nav)               | Sticky navigation bar on scroll.         | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/sticky-nav/) |
+| 19         | [Tabs](./tabs-project)                   | Simple tabs component for switching content. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/tabs-project/) |
+| 20         | [Temperature Converter](./temperature-converter) | Converts temperatures between units. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/temperature-converter/) |
+| 21         | [Testimonial Slider](./testimonial-slider) | Sliding testimonials UI component.       | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/testimonial-slider/) |
+| 22         | [Tip Calculator](./tip-calculator)       | Calculates tips based on total bill amount. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/tip-calculator/) |
+| 23         | [Video Trailer Popup](./video-trailer-popup) | Popup for video trailers.                | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/video-trailer-popup/) |
+| 24         | [Weight Converter](./weight-converter)   | Converts weight between units.           | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/weight-converter/) |
+| 25         | [Cash Register Project](./cash-register-project) | A cash register application.             | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/cash-register-project/) |
+| 26         | [Palindrome Checker](./palindrome-checker) | Checks if a string is a palindrome.      | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/palindrome-checker/) |
+| 27         | [Pokemon Search App](./pokemon-search-app) | Search for Pokémon information.          | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/pokemon-search-app/) |
+| 28         | [Roman Numeral Converter](./roman-numeral-converter) | Converts numbers to Roman numerals.     | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/roman-numeral-converter/) |
+| 29         | [Telephone Number Validator](./telephone-number-validator) | Validates telephone numbers. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/telephone-number-validator/) |
 
-3. [Project 3: Bookly](./bookly)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/bookly/)
-
-4. [Project 4: Canvas](./canvas)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/canvas/)
-
-5. [Project 5: Dice Roll Simulator](./dice-roll-simulator)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/dice-roll-simulator/)
-
-6. [Project 6: Gallery](./gallery)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/gallery/)
-
-7. [Project 7: Github Account Finder](./github-account-finder)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/github-account-finder/)
-
-8. [Project 8: Javascript Quiz](./javascript-quiz)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/javascript-quiz/)
-
-9. [Project 9: Notice Board](./notice-board)
-   [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/notice-board/)
-
-10. [Project 10: Pomodoro Timer](./pomodoro-timer)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/pomodoro-timer/)
-
-11. [Project 11: Quotes Infinite Scroll](./quotes-infinite-scroll)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/quotes-infinite-scroll/)
-
-12. [Project 12: Recipe Book App](./recipe-book-app)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/recipe-book-app/)
-
-13. [Project 13: Rock Paper Scissors](./rock-paper-scissors)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/rock-paper-scissors/)
-
-14. [Project 14: Simple Stopwatch](./simple-stopwatch)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/simple-stopwatch/)
-
-15. [Project 15: Social Media Selector Menu](./social-media-selector-menu)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/social-media-selector-menu/)
-
-16. [Project 16: Splash Image](./splash-image)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/splash-image/)
-
-17. [Project 17: Step Progress Bar](./step-progress-bar)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/step-progress-bar/)
-
-18. [Project 18: Sticky Nav](./sticky-nav)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/sticky-nav/)
-
-19. [Project 19: Tabs](./tabs-project)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/tabs-project/)
-
-20. [Project 20: Temperature Converter](./temperature-converter)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/temperature-converter/)
-
-21. [Project 21: Testimonial Slider](./testimonial-slider)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/testimonial-slider/)
-
-22. [Project 22: Tip Calculator](./tip-calculator)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/tip-calculator/)
-
-23. [Project 23: Video Trailer Popup](./video-trailer-popup)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/video-trailer-popup/)
-
-24. [Project 24: Weight Converter](./weight-converter)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/weight-converter/)
-
-25. [Project 25: Cash Register Project](./cash-register-project/)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/cash-register-project/)
-
-26. [Project 26. Palindrome Checker](./palindrome-checker/)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/palindrome-checker/)
-
-27. [Project 27: Pokemon Search App](./pokemon-search-app/)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/pokemon-search-app/)
-
-28. [Project 28: Roman Numeral Converter](./roman-numeral-converter/)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/roman-numeral-converter/)
-
-29. [Project 29: Telephone Number Validator](./telephone-number-validator/)
-    [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/telephone-number-validator/)
 
 ## Installation
 
