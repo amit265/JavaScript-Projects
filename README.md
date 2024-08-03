@@ -16,7 +16,7 @@ Welcome to the 100 JavaScript Projects repository! This repository contains a co
 
 Below is a list of all the projects included in this repository. Click on the project name to navigate to its folder:
 
-| Serial No. | Project Name                             | Description                              | Live Demo                                                                                                            |
+| Serial No. | Project Name                             | Description                              | Live Demo                                                                                                             |
 |------------|------------------------------------------|------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | 1          | [2D Breakout Game](./2d-breakout-game)   | A classic 2D arcade game using JavaScript. | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/2d-breakout-game/) |
 | 2          | [Age Calculator](./age-calculator)       | Calculates age based on input birthdate.  | [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://coderespite.com/projects/jsProjects/age-calculator/) |
