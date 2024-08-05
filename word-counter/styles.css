@@ -45,14 +45,32 @@ h1 {
 .count {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     font-size: 1.2rem;
 }
 
 span {
     color: white;
+    padding: 10px;
+    
+
 }
 
 h5 {
     color: blueviolet;
 
+}
+
+button {
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
 }

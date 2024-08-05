@@ -1,6 +1,7 @@
 const textarea = document.getElementById("text-area");
 const wordcount = document.getElementById("word-count");
 const lettercount = document.getElementById("letter-count");
+const clear = document.getElementById("clear");
 
 textarea.addEventListener("keyup", () => {
   count();
@@ -18,3 +19,9 @@ const count = () => {
 
   wordcount.innerText = filtered.length;
 };
+
+clear.addEventListener("click", () => {
+  textarea.value = "";
+  wordcount.innerText = 0;
+  lettercount.innerText = 0;
+})
