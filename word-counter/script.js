@@ -10,11 +10,11 @@ const count = () => {
   lettercount.innerText = textarea.value.length;
   let letter = textarea.value;
   word = letter.trim().split(" ");
-  let filtered = word.filter(function (el) {
-    return el != null || " ";
+  let filtered = word.filter(function (element) {
+    return element !== "";
   });
+
   console.log(filtered);
 
-    wordcount.innerText = filtered.length;
-
+  wordcount.innerText = filtered.length;
 };
