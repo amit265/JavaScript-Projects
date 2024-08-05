@@ -14,7 +14,7 @@ const count = () => {
     return element !== "";
   });
 
-  console.log(filtered);
+//   console.log(filtered);
 
   wordcount.innerText = filtered.length;
 };
