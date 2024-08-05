@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+    <meta name="description"
+        content="Create a Leaderboard for the FCC Forum using JavaScript, displaying user ranks and scores." />
+    <meta name="keywords" content="FCC Forum Leaderboard, JavaScript, forum, web app, community" />
+    <meta property="og:title" content="FCC Forum Leaderboard" />
+    <meta property="og:description"
+        content="Create a Leaderboard for the FCC Forum using JavaScript, displaying user ranks and scores." />
+    <meta property="og:image" content="https://coderespite.com/image/js-projects/fcc-forum-leaderboard.png" />
+    <meta property="og:url" content="https://coderespite.com/projects/js-projects/fcc-forum-leaderboard" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FCC Forum Leaderboard" />
+    <meta name="twitter:description"
+        content="Create a Leaderboard for the FCC Forum using JavaScript, displaying user ranks and scores." />
+    <meta name="twitter:image" content="https://coderespite.com/image/js-projects/fcc-forum-leaderboard.png" />
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>fCC Forum Leaderboard</title>
     <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <nav>
-        <img
-          class="fcc-logo"
-          src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
-          alt="freeCodeCamp logo"
-        />
-      </nav>
-      <h1 class="title">Latest Topics</h1>
+        <nav>
+            <img class="fcc-logo" src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg"
+                alt="freeCodeCamp logo" />
+        </nav>
+        <h1 class="title">Latest Topics</h1>
     </header>
     <main>
-      <div class="table-wrapper">
-        <table>
-          <thead>
-            <tr>
-              <th id="topics">Topics</th>
-              <th id="avatars">Avatars</th>
-              <th id="replies">Replies</th>
-              <th id="views">Views</th>
-              <th id="activity">Activity</th>
-            </tr>
-          </thead>
-          <tbody id="posts-container"></tbody>
-        </table>
-      </div>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th id="topics">Topics</th>
+                        <th id="avatars">Avatars</th>
+                        <th id="replies">Replies</th>
+                        <th id="views">Views</th>
+                        <th id="activity">Activity</th>
+                    </tr>
+                </thead>
+                <tbody id="posts-container"></tbody>
+            </table>
+        </div>
     </main>
     <script src="./script.js"></script>
-  </body>
+</body>
+
 </html>
