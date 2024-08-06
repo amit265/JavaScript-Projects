@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: bisque;
+    background-color: black;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+   
+}
+
+
+.emoji {
+    font-size: 5rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+
+    
+}
+
+.emoji:hover {
+    border: 1px solid red;
+    border-radius: 20%;
+   
+}
+h5 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+
+}
