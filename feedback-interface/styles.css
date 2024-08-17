@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cc0808;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-top: 30vh;
+    margin-inline: auto !important;
+    padding: 1rem 0;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    background-color: bisque;
+    gap: 1rem 0;
+    border-radius: 5px;
+}
+
+.emojis {
+    display: flex;
+    gap: 2;
+
+
+}
+
+.emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform.2s;
+    color: #000;
+    flex-direction: column;
+    width: 100px;
+    padding: 1rem;
+    &:hover {
+        transform: scale(1.05);
+        background-color: #008080;
+        color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+        outline: none;
+        border-radius: 10px;
+
+    }
+}
+
+
+
+.emoji:hover {
+    transform: scale(1.1);
+}
+
+button.review{
+    background-color: aquamarine;   
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+    &:hover {
+        background-color: #008080;
+    }
+
+
+}
+
+img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: transform.2s;
+    &:hover {
+        transform: scale(1.05);
+    }
+
+}
+
+.selected {
+    border: 2px solid #fff;
+    background-color: #008080;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+    outline: none;
+    border-radius: 10px;
+    transform: scale(1.05);
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+
+}
+
+.hidden {
+ display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+#box {
+    display: none;  
+    
+}
+ .message-box {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+ }
+
+ p {
+    text-align: center;
+ }
+
+ #message {
+    color: green !important;
+ }
