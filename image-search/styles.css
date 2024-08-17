@@ -79,6 +79,8 @@ img {
    
 }
 
+
+
 p {
     text-justify: auto;
     padding: 10px;
@@ -86,8 +88,13 @@ p {
 }
 
 .image-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
     box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+    border: 1px solid green;
 
+}
+
+#loading {
+    padding: 2rem;
 }
