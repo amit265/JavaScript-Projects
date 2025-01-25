@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    margin: 4px;
+    object-fit: cover;
+}
+
