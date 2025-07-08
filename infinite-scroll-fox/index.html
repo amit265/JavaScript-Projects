@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinite scroll</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container"></div>
     <script src="script.js"></script>
+    // download video from disk storaege
+    <script>
+        const container = document.querySelector('.container');
+        const videoUrl =
+        '/media/amit/Other1/Coding/extra/.vd/.vd/Kazam_screencast_00001asd.mp4'; // Replace with your video URL
+
+        function createVideoElement() {
+            const videoElement = document.createElement('video');
+            videoElement.src = videoUrl;
+            videoElement.controls = true;
+            videoElement.width = 320;
+            videoElement.height = 240;
+            return videoElement;
+        }
+
+        function loadVideos() {
+            for (let i = 0; i < 10; i++) {
+                const videoElement = createVideoElement();
+                container.appendChild(videoElement);
+            }
+        }
+
+        loadVideos();
+    </script>
 </body>
+
 </html>
