@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show / Hide Password</title>
+  <style>
+    body {
+      font-family: system-ui, Arial;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .wrapper {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      width: 280px;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+      border: 1px solid #d1d5db;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1d4ed8;
+    }
+      .input-group {
+    position: relative;
+  }
+  .toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h3>🔒 Password Field</h3>
+    <input type="password" id="password" placeholder="Enter password">
+    <button id="toggleBtn">Show</button>
+  </div>
+
+  <script>
+    const passwordInput = document.getElementById("password");
+    const toggleBtn = document.getElementById("toggleBtn");
+
+    toggleBtn.addEventListener("click", () => {
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleBtn.textContent = "Hide";
+      } else {
+        passwordInput.type = "password";
+        toggleBtn.textContent = "Show";
+      }
+    });
+
+
+  </script>
+</body>
+</html>
