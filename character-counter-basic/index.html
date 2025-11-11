@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Counter App</title>
+  <style>
+    body {
+      font-family: system-ui, Arial;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f3f4f6;
+    }
+    .container {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      text-align: center;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      font-size: 15px;
+      border-radius: 8px;
+      padding: 10px;
+      resize: none;
+      border: 1px solid #d1d5db;
+    }
+    p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .count {
+      font-weight: bold;
+    }
+    .red {
+      color: #ef4444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>📝 Character Counter</h3>
+    <textarea id="textInput" placeholder="Type your message..."></textarea>
+    <p><span id="charCount" class="count">0</span> / <span id="maxCount">100</span></p>
+  </div>
+
+  <script>
+    const textarea = document.getElementById("textInput");
+    const charCount = document.getElementById("charCount");
+    const maxCount = document.getElementById("maxCount");
+    const limit = 100;
+
+    maxCount.textContent = limit;
+
+    textarea.addEventListener("input", () => {
+      const length = textarea.value.length;
+      charCount.textContent = length;
+
+      if (length > limit) {
+        charCount.classList.add("red");
+        textarea.style.borderColor = "#ef4444";
+      } else {
+        charCount.classList.remove("red");
+        textarea.style.borderColor = "#d1d5db";
+      }
+    });
+  </script>
+</body>
+</html>
