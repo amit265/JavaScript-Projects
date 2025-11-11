@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Quote Generator</title>
+  <style>
+    body {
+      font-family: system-ui, Arial;
+      background: #f3f4f6;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .quote-box {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      text-align: center;
+      padding: 25px 30px;
+      transition: all 0.3s ease;
+    }
+    .quote-text {
+      font-size: 20px;
+      font-weight: 500;
+      color: #111827;
+      margin-bottom: 10px;
+    }
+    .quote-author {
+      font-size: 16px;
+      color: #6b7280;
+      margin-bottom: 20px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1e40af;
+    }
+  </style>
+</head>
+<body>
+  <div class="quote-box">
+    <div class="quote-text" id="quote">"The secret of getting ahead is getting started."</div>
+    <div class="quote-author" id="author">– Mark Twain</div>
+    <button id="newQuote">New Quote</button>
+  </div>
+
+  <script>
+    const quotes = [
+      { text: "The secret of getting ahead is getting started.", author: "Mark Twain" },
+      { text: "In the middle of every difficulty lies opportunity.", author: "Albert Einstein" },
+      { text: "Don’t watch the clock; do what it does. Keep going.", author: "Sam Levenson" },
+      { text: "Success is not final, failure is not fatal: it is the courage to continue that counts.", author: "Winston Churchill" },
+      { text: "The future belongs to those who prepare for it today.", author: "Malcolm X" },
+      { text: "Dream big and dare to fail.", author: "Norman Vaughan" },
+      { text: "Happiness is not something ready-made. It comes from your own actions.", author: "Dalai Lama" }
+    ];
+
+    const quoteEl = document.getElementById("quote");
+    const authorEl = document.getElementById("author");
+    const newQuoteBtn = document.getElementById("newQuote");
+
+    function generateQuote() {
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      const { text, author } = quotes[randomIndex];
+      quoteEl.textContent = `"${text}"`;
+      authorEl.textContent = `– ${author}`;
+    }
+
+    setInterval(generateQuote, 10000);
+
+    newQuoteBtn.addEventListener("click", generateQuote);
+  </script>
+</body>
+</html>
