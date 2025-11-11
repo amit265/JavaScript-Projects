@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slider</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f3f4f6;
+      font-family: system-ui, Arial;
+    }
+    .slider {
+      position: relative;
+      width: 400px;
+      height: 250px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+    .slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      display: none;
+    }
+    .slider img.active {
+      display: block;
+      animation: fade 0.5s ease-in;
+    }
+    @keyframes fade {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .controls {
+      margin-top: 20px;
+    }
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin: 0 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <h2>🖼️ Image Slider</h2>
+  <div class="slider">
+    <img src="https://picsum.photos/400/250?random=1" class="active" alt="Image 1">
+    <img src="https://picsum.photos/400/250?random=2" alt="Image 2">
+    <img src="https://picsum.photos/400/250?random=3" alt="Image 3">
+    <img src="https://picsum.photos/400/250?random=4" alt="Image 4">
+  </div>
+
+  <div class="controls">
+    <button id="prevBtn">⬅️ Prev</button>
+    <button id="nextBtn">Next ➡️</button>
+  </div>
+
+  <script>
+    const images = document.querySelectorAll(".slider img");
+    const nextBtn = document.getElementById("nextBtn");
+    const prevBtn = document.getElementById("prevBtn");
+    let current = 0;
+
+    function showImage(index) {
+      images.forEach((img, i) => {
+        img.classList.toggle("active", i === index);
+      });
+    }
+
+    nextBtn.addEventListener("click", () => {
+      current = (current + 1) % images.length;
+      showImage(current);
+    });
+
+    prevBtn.addEventListener("click", () => {
+      current = (current - 1 + images.length) % images.length;
+      showImage(current);
+    });
+
+    setInterval(() => {
+  current = (current + 1) % images.length;
+  showImage(current);
+}, 3000);
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowRight") nextBtn.click();
+  if (e.key === "ArrowLeft") prevBtn.click();
+});
+
+
+  </script>
+</body>
+</html>
