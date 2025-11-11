@@ -1,61 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Background Color Changer</title>
-  <style>
-    body {
-      font-family: system-ui, Arial;
-      text-align: center;
-      transition: background-color 0.5s ease;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    button {
-      background: #111827;
-      color: white;
-      border: none;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 20px;
-    }
-    #colorCode {
-      margin-top: 10px;
-      font-size: 20px;
-      font-weight: 600;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Background Color Changer</title>
+    <style>
+        body {
+            font-family: system-ui, Arial;
+            text-align: center;
+            transition: background-color 0.5s ease;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        button {
+            background: #111827;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #colorCode {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    </style>
 </head>
+
 <body>
-  <h2>🎨 Background Color Changer</h2>
-  <button id="changeColorBtn">Change Color</button>
-  <p id="colorCode">#FFFFFF</p>
+    <h2>🎨 Background Color Changer</h2>
+    <button id="changeColorBtn">Change Color</button>
+    <p id="colorCode">#FFFFFF</p>
 
-  <script>
-    const button = document.getElementById("changeColorBtn");
-    const colorCode = document.getElementById("colorCode");
+    <script>
+        const button = document.getElementById("changeColorBtn");
+        const colorCode = document.getElementById("colorCode");
 
-    function randomColor() {
-      // Generate random hex color
-      const letters = "0123456789ABCDEF";
-      let color = "#";
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
+        function randomColor() {
+            // Generate random hex color
+            const letters = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
 
-    button.addEventListener("click", () => {
-      const newColor = randomColor();
-      document.body.style.backgroundColor = newColor;
-      colorCode.textContent = newColor;
-      colorCode.style.color = newColor;
-    });
-  </script>
+        button.addEventListener("click", () => {
+            const newColor = randomColor();
+            document.body.style.backgroundColor = newColor;
+            colorCode.textContent = newColor;
+            colorCode.style.color = newColor;
+        });
+
+        setInterval(() => {
+            const newColor = randomColor();
+            document.body.style.backgroundColor = newColor;
+            colorCode.textContent = newColor;
+        }, 1222);
+    </script>
 </body>
+
 </html>
