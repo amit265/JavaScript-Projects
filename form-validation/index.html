@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Form Validation</title>
+  <style>
+    body {
+      font-family: system-ui, Arial;
+      background: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    form {
+      background: white;
+      padding: 25px 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    h3 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 5px;
+    }
+    button {
+      width: 100%;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #1e40af;
+    }
+    p {
+      color: red;
+      font-size: 13px;
+      margin: 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <form id="signupForm">
+    <h3>📝 Sign Up</h3>
+
+    <input type="text" id="username" placeholder="Username">
+    <p id="nameError"></p>
+
+    <input type="email" id="email" placeholder="Email">
+    <p id="emailError"></p>
+
+    <input type="password" id="password" placeholder="Password">
+    <p id="passError"></p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("signupForm");
+    const username = document.getElementById("username");
+    const email = document.getElementById("email");
+    const password = document.getElementById("password");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault(); // stop form from reloading
+      let valid = true;
+
+      // Reset previous error messages
+      document.querySelectorAll("p").forEach(p => p.textContent = "");
+
+      // Username validation
+      if (username.value.trim() === "") {
+        document.getElementById("nameError").textContent = "Username is required.";
+        valid = false;
+      }
+
+      // Email validation (simple regex)
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!email.value.match(emailPattern)) {
+        document.getElementById("emailError").textContent = "Enter a valid email address.";
+        valid = false;
+      }
+
+      // Password validation
+      if (password.value.length < 6) {
+        document.getElementById("passError").textContent = "Password must be at least 6 characters.";
+        valid = false;
+      }
+
+      if (valid) {
+        alert("🎉 Form submitted successfully!");
+        form.reset();
+      }
+    });
+  </script>
+</body>
+</html>
