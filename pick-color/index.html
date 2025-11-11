@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Color Picker App</title>
+    <style>
+        body {
+            font-family: system-ui, Arial;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin-top: 100px;
+            transition: background-color 0.5s;
+        }
+
+        .picker-container {
+            display: inline-block;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+        }
+
+        input[type="color"] {
+            border: none;
+            width: 80px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        #hexValue {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picker-container">
+        <h2>🎨 Pick a Color</h2>
+        <input type="color" id="colorPicker" value="#00bcd4">
+        <p id="hexValue">#00BCD4</p>
+    </div>
+
+    <script>
+        const picker = document.getElementById("colorPicker");
+        const hexValue = document.getElementById("hexValue");
+
+        picker.addEventListener("input", () => {
+            document.body.style.backgroundColor = picker.value;
+            hexValue.textContent = picker.value.toUpperCase();
+            hexValue.style.color = picker.value;
+        });
+    </script>
+</body>
+
+</html>
