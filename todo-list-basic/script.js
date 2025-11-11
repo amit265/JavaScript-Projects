@@ -1,43 +1,48 @@
 const container = document.getElementsByClassName(".container");
-const newTask = document.getElementById("new-task");
+const newTaskInput = document.getElementById("new-task");
 const listContainer = document.getElementById("todo-list");
 const addTaskButton = document.getElementById("add-task");
 
-console.log(newTask.value)
+const addTask = () => {
+  const taskText = newTaskInput.value.trim();
+  if (taskText === "") {
+    alert("Please enter a task.");
+    return;
+  }
 
-addTaskButton.addEventListener("click", function() {
-    if (newTask.value === "") {
-        alert("Please enter a task");
-    } else {
-        let li = document.createElement("li");
-        li.innerHTML = newTask.value;
-        listContainer.appendChild(li);
+  const listItem = document.createElement("li");
+  listItem.className = "task-item";
 
-        let span = document.createElement("span");
-        span.innerHTML = "\u00d7";
-        li.appendChild(span);
+  const taskSpan = document.createElement("span");
+  taskSpan.innerText = taskText;
+  listItem.appendChild(taskSpan);
 
-    }
-    newTask.value = "";
-    saveData();
+  const deleteButton = document.createElement("button");
+  deleteButton.innerText = "Delete";
+  deleteButton.className = "delete-button";
+  deleteButton.addEventListener("click", () => {
+    listContainer.removeChild(listItem);
+  });
+  listItem.appendChild(deleteButton);
+
+  listContainer.appendChild(listItem);
+  newTaskInput.value = "";
+};
+
+addTaskButton.addEventListener("click", addTask);
+
+newTaskInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") {
+    addTask();
+  }
 });
 
-listContainer.addEventListener("click", function(e) {
-    if (e.target.tagName === "LI") {
-        e.target.classList.toggle("checked");
-        saveData();
-    } else if (e.target.tagName === "SPAN") {
-        e.target.parentElement.remove();
-        saveData();
-    }
-}, false);
+console.log(
+  "Todo List Script Loaded",
+  container,
+  newTaskInput,
+  listContainer,
+  addTaskButton
+);
 
-function saveData() {
-    localStorage.setItem("data", listContainer.innerHTML);
-}
 
-function showTask() {
-    listContainer.innerHTML = localStorage.getItem("data");
-}
-
-showTask();             
