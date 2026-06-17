@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-# 100 JavaScript Projects
+# 100 JavaScript Projects 
 
 Welcome to the 100 JavaScript Projects repository! This repository contains a collection of JavaScript projects ranging from beginner to advanced levels. The goal is to build 100 (or more) projects to practice and enhance JavaScript skills.
 
